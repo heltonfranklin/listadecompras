@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="text-center mb-4">Lista de Compras</h1>
+                <div class="input-group mb-3">
+                    <input type="text" id="itemInput" class="form-control" placeholder="Adicionar item">
+                    <div class="input-group-append">
+                        <button id="addButton" class="btn btn-success" type="button">Adicionar</button>
+                    </div>
+                </div>
+                <ul id="shoppingList" class="list-group mb-4"></ul>
+                <h3>Carrinho</h3>
+                <ul id="cartList" class="list-group mb-3"></ul>
+                <div class="total-container mt-3">
+                    <h3>Total: R$ <span id="totalPrice">0.00</span></h3>
+                </div>
+                <button id="checkoutButton" class="btn btn-primary mt-3" style="display: none;">Finalizar Compra</button>
+                <div id="summary" class="mt-4" style="display: none;">
+                    <h3>Resumo da Compra</h3>
+                    <ul id="summaryList" class="list-group mb-3"></ul>
+                    <h4>Total: R$ <span id="summaryTotalPrice">0.00</span></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

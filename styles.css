@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h3, h4 {
+    color: #343a40;
+}
+
+.input-group {
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.delete-button, .price-button {
+    background-color: transparent;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.price-button {
+    color: #28a745;
+}
+
+.delete-button:hover {
+    color: #c82333;
+}
+
+.price-button:hover {
+    color: #218838;
+}
+
+.total-container {
+    text-align: center;
+}
+
+.total-container h3 {
+    color: #343a40;
+}
+
+.quantity-input {
+    width: 60px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#checkoutButton {
+    display: none;
+    margin: 0 auto;
+    display: block;
+}
+
+#summary {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .input-group, .total-container, #checkoutButton, #summary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .quantity-input {
+        width: 50px;
+    }
+
+    .delete-button, .price-button {
+        margin-left: 5px;
+    }
+}
